@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int battery;
+
+    printf("Enter Battery Percentage: ");
+    scanf("%d", &battery);
+
+    if (battery < 0 || battery > 100)
+        printf("Invalid Battery Percentage");
+    else if (battery <= 20)
+        printf("Low Battery! Please Charge.");
+    else if (battery <= 50)
+        printf("Battery Medium");
+    else
+        printf("Battery Good");
+
+    return 0;
+}
